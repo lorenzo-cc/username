@@ -1,13 +1,13 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** Lorenzo Cocchi
+- **Course:** Intro to *nix, CPSC 298-01
 - **Assignment:** Username Validation
-- **Date:** [Date of Completion]
+- **Date:** October 13, 2025
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+The program asks the user to input a username that only contains lowercase letters, numbers, or underscores. The length must be at least 3 and at most 12 characters, and must start with a lowercase letter. This is defined within the is_valid_username() function, where the following filters are checked as true or false is returned. In the main class, the print_rules() function prints the limitations of the username, then checked in a loop until the username is valid. Once it is, it thanks the user and exits the program.
 
 ## Username Requirements
 This script validates usernames according to the following rules:
@@ -27,11 +27,7 @@ To test with the provided input file:
 ```
 
 ## How the Script Works
-[Explain in 3-5 sentences how your script validates usernames. Include information about:]
-- The use of the `while` loop
-- The `grep` command with extended regular expressions
-- The meaning of the `-E` and `-v` flags
-- The redirect `> /dev/null 2>&1`
+The script is explained above. Simply put, there are 3 functions. Main, is_valid_username() which returns a boolean value based on the rules, and print_rules() which prints the rules. is_valid_username() checks the first parameter in the local scope of the variable in that function. It checks only the first positional parameter, '$1'.
 
 ## Regular Expression Pattern
 The validation uses the following regular expression pattern:
@@ -50,10 +46,10 @@ This pattern ensures that:
 - How you used the username-input file to test
 
 ## Challenges and Solutions
-[Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
+Understanding grep expressions like $1, creating functions to clear up the script, and uppercase. Ended up googling the solutions and getting help that way.
 
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
+Google
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
