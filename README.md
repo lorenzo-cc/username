@@ -1,4 +1,4 @@
-# README for Username Validation Script
+# README for Username Jenkins Job
 
 ## Author Information
 - **Name:** Lorenzo Cocchi
@@ -7,7 +7,7 @@
 - **Date:** October 13, 2025
 
 ## Program Description
-The program asks the user to input a username that only contains lowercase letters, numbers, or underscores. The length must be at least 3 and at most 12 characters, and must start with a lowercase letter. This is defined within the is_valid_username() function, where the following filters are checked as true or false is returned. In the main class, the print_rules() function prints the limitations of the username, then checked in a loop until the username is valid. Once it is, it thanks the user and exits the program.
+Jenkins runs the program through my local username repo, sending me an email if the build does not succeed. I did all of this using my Terminal and Jenkins settings.
 
 ## Username Requirements
 This script validates usernames according to the following rules:
